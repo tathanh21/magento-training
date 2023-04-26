@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="cronjob" translate="label" sortOrder="10">
+            <label>Cron Job</label>
+        </tab>
+        <section id="cronjob" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Cron Job</label>
+            <tab>cronjob</tab>
+            <resource>Ecommage_ThanhEx1::helloworld_config3</resource>
+            <group id="cron" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+               <label>Cron Setting</label>
+                <field id="cron_shedule" sortOrder="1" type="text" showInDefault="1">
+                    <label>Cron Shedule</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

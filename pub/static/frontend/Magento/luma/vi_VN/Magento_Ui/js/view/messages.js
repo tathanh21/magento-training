@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-ui/view/frontend/web/js/view/messages.js

@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-security/view/base/web/js/escaper.js

@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-checkout/view/frontend/web/js/sidebar.js

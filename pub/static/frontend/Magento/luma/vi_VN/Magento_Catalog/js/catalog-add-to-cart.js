@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-catalog/view/frontend/web/js/catalog-add-to-cart.js

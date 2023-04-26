@@ -1,0 +1,127 @@
+<?php
+$customer = $this->getCustomer();
+$authors = $this->getAuthorCollection();
+
+//echo '<pre>';
+//var_dump($customer->getTitle());
+//die();
+?>
+
+
+
+<div id="customer-form">
+    <form class="form-contact-edit"
+
+<!--          action="--><?php //echo $this->getUrl('thanhex2/customer/customersaveedit', ['_secure' => true]); ?><!--"-->
+<!---->
+<!--          id="custom-form"-->
+<!---->
+<!--          method="post"-->
+<!---->
+<!--          data-hasrequired="--><?php //echo __('* Required Fields') ?><!--"-->
+<!---->
+<!--          data-mage-init='{"validation":{}}'>-->
+        <input type="hidden" name="id" id="id" value="<?= $customer->getId() ?>"/>
+
+        <fieldset class="fieldset">
+            <h3>Form Edit Customer</h3>
+            <div class="field name required">
+                <label class="label" for="name"><span><?php echo __('Title') ?></span></label>
+                <div class="control">
+                    <input name="title" id="title" title="<?php echo __('Title') ?>" class="input-text" type="text"
+                           value="<?= $customer->getTitle() ?>"
+                           data-validate="{required:true}"/>
+                </div>
+            </div>
+
+<!--            <div class="field author required">-->
+<!---->
+<!--                <label class="label" for="country"><span>--><?php //echo __('Author') ?><!--</span></label>-->
+<!---->
+<!--                <div class="control">-->
+<!---->
+<!--                    <select name="author" id="author" data-validate="{required:true, 'validate-select':true}">-->
+<!--                        --><?php
+//                        foreach ($authors as $authorKey => $author) {
+//                            if ($author['customerid'] == $customer['author_id']) { ?>
+<!--                                <option value="--><?php //echo $author['customerid']; ?><!--" selected>--><?php //echo $author['firstname']; ?><!--</option>-->
+<!--                            --><?php //} else { ?>
+<!--                                <option value="--><?php //echo $author['customerid']; ?><!--">--><?php //echo $author['firstname']; ?><!--</option>-->
+<!--                            --><?php //}
+//                        }
+//                        ?>
+<!---->
+<!--                    </select>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+            <div class="field name required">
+                <label class="label" for="name"><span><?php echo __('Url') ?></span></label>
+                <div class="control">
+                    <input name="url" id="url" title="<?php echo __('Url') ?>" class="input-text" type="text"
+                           value="<?= $customer->getUrlKey() ?>"
+                           data-validate="{required:true}"/>
+                </div>
+            </div>
+
+
+            <div class="field name required">
+                <label class="label" for="name"><span><?php echo __('Content') ?></span></label>
+                <div class="control">
+                    <input name="content" id="content" title="<?php echo __('Content') ?>" class="input-text"
+                           value="<?= $customer->getContent() ?>"
+                           type="text"
+                           data-validate="{required:true}"/>
+                </div>
+            </div>
+
+            <div class="field status required">
+
+                <label class="label" for="country"><span>
+                        <?php echo __('Status') ?></span></label>
+
+                <div class="control">
+                    <?php $status = array('1' => 'Public', '2' => 'Draft', '3' => 'Non_Public'); ?>
+                    <select name="status" id="status" data-validate="{required:true, 'validate-select':true}">
+                        <?php
+                        foreach ($status as $key => $value) {
+                            if ($customer['status'] == $key) { ?>
+                                <option value=" <?php echo $key; ?>" selected><?php echo $value; ?></option>
+                            <?php } else { ?>
+                                <option value=" <?php echo $key; ?>"><?php echo $value; ?></option>
+                            <?php }
+                        }
+                        ?>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+        </fieldset>
+        <div class="actions-toolbar">
+
+            <div class="primary">
+
+                <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary" id="custom_btn_edit">
+
+                    <span><?php echo __('Submit') ?></span>
+
+                </button>
+
+            </div>
+
+        </div>
+    </form>
+
+</div>
+<script type="text/x-magento-init"><?php // @codingStandardsIgnoreLine?>
+    {
+        "*": {
+            "custom": {}
+        }
+    }
+</script>

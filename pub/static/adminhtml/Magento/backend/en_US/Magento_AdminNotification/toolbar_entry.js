@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-admin-notification/view/adminhtml/web/toolbar_entry.js

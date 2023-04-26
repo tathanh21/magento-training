@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ecommage_ThanhEx1::testEx1_id" title="ThanhEx1" module="Ecommage_ThanhEx1" sortOrder="51" resource="Ecommage_ThanhEx1::testEx1" />
+        <add id="Ecommage_ThanhEx1::post2_id" title="Manage Posts2" module="Ecommage_ThanhEx1" sortOrder="10" action="thanhex2admin/post/index" resource="Ecommage_ThanhEx1::post2" parent="Ecommage_ThanhEx1::testEx1_id"/>
+        <add id="Ecommage_ThanhEx1::test_configuration2_id" title="Test_Configuration" module="Ecommage_ThanhEx1" sortOrder="99" parent="Ecommage_ThanhEx1::testEx1_id" action="adminhtml/system_config/edit/section/thanhex1_test" resource="Ecommage_ThanhEx1::test_configuration2"/>
+    </menu>
+</config>

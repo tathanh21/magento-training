@@ -1,0 +1,72 @@
+<h1>List Customer</h1>
+
+<!--<script src="--><?php //echo $this->getViewFileUrl('Ecommage_ThanhEx2::js/custom.js'); ?><!--">-->
+<!---->
+<!--</script>-->
+
+<table border="1" width="100%">
+    <tr>
+        <th>
+            <?= __("Id") ?>
+        </th>
+        <th>
+            <?= __("Title") ?>
+        </th>
+        <th>
+            <?= __("Author") ?>
+        </th>
+        <th>
+            <?= __("Url Key") ?>
+        </th>
+        <th>
+            <?= __("Content") ?>
+        </th>
+        <th>
+            <?= __("Status") ?>
+        </th>
+        <th>
+            <?= __("Edit") ?>
+        </th>
+        <th>
+            <?= __("Delete") ?>
+        </th>
+    </tr>
+    <?php
+    $customers = $this->getCollection();
+    //   echo '<pre>';
+    //    var_dump($customers);
+    //   die();
+    foreach ($customers as $customer) { ?>
+        <tr>
+            <td>
+                <?= $customer['id'] ?>
+            </td>
+            <td>
+                <?= $customer['title'] ?>
+            </td>
+            <td>
+                <?= $customer['firstname'] ?>
+            </td>
+            <td>
+                <?= $customer['url_key'] ?>
+            </td>
+            <td>
+                <?= $customer['content'] ?>
+            </td>
+            <td>
+                <?= $this->getStatus($customer['status']); ?>
+            </td>
+
+            <td>
+                <a href="<?= $this->getUrl('thanhex2/customer/customeredit', ['id' => $customer['id']]) ?>">
+                    <?= __('Edit') ?>
+                </a>
+            </td>
+            <td>
+                <a href="<?= $this->getUrl('thanhex2/customer/customerdelete', ['id' => $customer['id']]) ?>">
+                    <?= __('Delete') ?>
+                </a>
+            </td>
+        </tr>
+    <?php } ?>
+</table>

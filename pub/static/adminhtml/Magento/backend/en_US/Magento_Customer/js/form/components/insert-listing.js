@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-customer/view/adminhtml/web/js/form/components/insert-listing.js

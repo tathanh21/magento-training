@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-swatches/view/base/web/js/swatch-renderer.js

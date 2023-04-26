@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Ecommage\ThanhEx2\Block\Index" name="custom.tab" template="Ecommage_ThanhEx2::custom_tab.phtml" group="detailed_info" >
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Custom Tab</argument>
+                    <argument name="sort_order" xsi:type="string">50</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <move element="product.info.price" destination="product.info.media" />
+
+        <referenceBlock name="custom.tab">
+            <arguments>
+                <argument translate="true" name="title" xsi:type="string">Custom Tab New</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="top.search" destination="footer" after="-"/>
+        <referenceBlock name="sidebar.additional" remove="true"/>
+
+<!--        <referenceBlock name="block_name">-->
+<!--            <block class="Ecommage\HelloWorld\Block\First" name="test" templates="Ecommage_HelloWorld::acb\first.phtml"/>-->
+<!--        </referenceBlock>-->
+
+<!--        <container>-->
+<!--            <block class="Ecommage\HelloWorld\Block\First" name="test" templates="Ecommage_HelloWorld::acb\first.phtml"/>-->
+<!--        </container>-->
+<!--        <container name="abc" htmlClass="">-->
+<!--            <container />-->
+<!--        </container>-->
+    </body>
+</page>

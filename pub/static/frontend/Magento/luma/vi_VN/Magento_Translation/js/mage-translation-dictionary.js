@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-translation/view/base/web/js/mage-translation-dictionary.js

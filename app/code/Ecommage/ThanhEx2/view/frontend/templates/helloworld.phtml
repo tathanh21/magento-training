@@ -1,0 +1,16 @@
+<?php
+//Get product object by ID
+$id = '47';
+$_product = $this->getProductById($id);
+
+//Get product object by SKU
+// $sku = 'PRODUCT_SKU';
+// $_product = $block->getProductBySku($sku);
+
+$imageId = 'product_base_image';
+$width = 100;
+$height = 100;
+
+$resizedImageUrl = $this->resizeImage($_product, 'product_base_image', $width, $height)->getUrl();
+?>
+<img src="<?php echo $resizedImageUrl;?>" alt="<?php echo $_product->getTitle();?>" />

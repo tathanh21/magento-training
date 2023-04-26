@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <thanhex1_test>
+            <general_test>
+                <enable_test>1</enable_test>
+                <display_text_test>test thanh ex1</display_text_test>
+            </general_test>
+        </thanhex1_test>
+    </default>
+</config>

@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/app/code/Ecommage/ThanhEx2/view/frontend/web/js/swiper.js

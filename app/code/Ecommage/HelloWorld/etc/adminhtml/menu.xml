@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ecommage_HelloWorld::helloworld" title="Hello World" module="Ecommage_HelloWorld" sortOrder="51" resource="Ecommage_HelloWorld::helloworld"/>
+        <add id="Ecommage_HelloWorld::post" title="Manage Posts" module="Ecommage_HelloWorld" sortOrder="10" action="ecommage_helloworld/post/index" resource="Ecommage_HelloWorld::post" parent="Ecommage_HelloWorld::helloworld"/>
+        <add id="Ecommage_HelloWorld::hello_configuration" title="Configuration" module="Ecommage_HelloWorld" sortOrder="99" parent="Ecommage_HelloWorld::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Ecommage_HelloWorld::helloworld_configuration"/>
+
+
+    <add id="Ecommage_HelloWorld::menu" title="Custom Menu" module="Ecommage_HelloWorld" sortOrder="10" resource="Ecommage_HelloWorld::menu"/>
+    <add id="Ecommage_HelloWorld::create" title="Create" module="Ecommage_HelloWorld" sortOrder="10" parent="Ecommage_HelloWorld::menu" action="custommenu/create/index" resource="Ecommage_HelloWorld::create"/>
+    <add id="Ecommage_HelloWorld::delete" title="Delete" module="Ecommage_HelloWorld" sortOrder="20" parent="Ecommage_HelloWorld::menu" action="custommenu/delete/index" resource="Ecommage_HelloWorld::delete"/>
+    <add id="Ecommage_HelloWorld::view" title="View" module="Ecommage_HelloWorld" sortOrder="30" parent="Ecommage_HelloWorld::menu" action="custommenu/view/index" resource="Ecommage_HelloWorld::view"/>
+</menu>
+</config>

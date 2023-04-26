@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <head>
+      <!-- Add local resources -->
+      <css src="Ecommage_ThanhEx1::css/mycss.css" />
+      <script src="Ecommage_ThanhEx1::js/myjs.js"/>
+      <!-- Remove local resources -->
+      <remove src="Ecommage_ThanhEx1::css/mycss.css" />
+  </head>
+    <body>
+    <referenceContainer name="content">
+        <block class="Ecommage\ThanhEx1\Block\First" name="thanhex1_first" template="Ecommage_ThanhEx1::first.phtml" />
+    </referenceContainer>
+  </body>
+</page>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="thanhex2admin" frontName="thanhex2admin">
+            <module name="Ecommage_ThanhEx2"/>
+        </route>
+    </router>
+</config>
