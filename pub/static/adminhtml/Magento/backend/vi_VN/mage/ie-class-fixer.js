@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/lib/web/mage/ie-class-fixer.js

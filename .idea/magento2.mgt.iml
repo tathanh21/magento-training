@@ -23,6 +23,20 @@
       <sourceFolder url="file://$MODULE_DIR$/dev/tests/integration/testsuite/Magento/Setup/Model/_files/testSkeleton/htdocs/setup/src/Magento/Setup" isTestSource="false" packagePrefix="Magento\Setup\" />
       <sourceFolder url="file://$MODULE_DIR$/dev/tests/integration/testsuite/Magento/Framework/Composer/_files/testFromClone/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/dev/tests/integration/testsuite/Magento/Framework/Composer/_files/testFromCreateProject/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app/code/Magento" isTestSource="false" packagePrefix="Magento\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/build/publication/sanity/Magento/Tools/Sanity" isTestSource="true" packagePrefix="Magento\Tools\Sanity\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/tests/static/framework/Magento/PhpStan" isTestSource="true" packagePrefix="Magento\PhpStan\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/tests/static/framework/Magento/Sniffs" isTestSource="true" packagePrefix="Magento\Sniffs\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/tests/static/framework/Magento/TestFramework/Inspection" isTestSource="true" packagePrefix="Magento\TestFramework\Inspection\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/tests/static/framework/Magento/TestFramework/Utility" isTestSource="true" packagePrefix="Magento\TestFramework\Utility\" />
+      <sourceFolder url="file://$MODULE_DIR$/dev/tools/Magento/Tools" isTestSource="true" packagePrefix="Magento\Tools\" />
+      <sourceFolder url="file://$MODULE_DIR$/generated/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/internal/Magento/Framework" isTestSource="false" packagePrefix="Magento\Framework\" />
+      <sourceFolder url="file://$MODULE_DIR$/setup/src/Magento/Setup" isTestSource="false" packagePrefix="Magento\Setup\" />
+      <sourceFolder url="file://$MODULE_DIR$/setup/src/Zend/Mvc/Controller" isTestSource="false" packagePrefix="Zend\Mvc\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-google-adwords" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-inventory-in-store-pickup" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/magento/module-google-analytics" />

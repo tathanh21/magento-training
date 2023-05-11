@@ -1,0 +1,17 @@
+<form id="my-form" method="post" data-mage-init='{"validation": {}}'>
+    <div class="field">
+        <label class="label" for="field-content">
+            Content
+        </label>
+        <div class="control">
+            <input name="content" id="field-content" type="text"
+                   data-validate="{'validate-badword': true}"
+                   placeholder="Enter content">
+        </div>
+    </div>
+</form>
+<script>
+    require(['my-script'], function(myScript) {
+        myScript();
+    });
+</script>

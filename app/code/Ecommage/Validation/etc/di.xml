@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+<!--    <type name="Magento\Customer\Model\Customer">-->
+<!--        <plugin name="after_create_customer_plugin" type="Ecommage\Validation\Plugin\AfterCreateCustomerPlugin" sortOrder="0"/>-->
+<!--    </type>-->
+<!--    <type name="Magento\Customer\Model\Customer">-->
+<!--        <plugin name="after_create_customer_plugin" type="Ecommage\Validation\Plugin\AfterCreateCustomerPlugin" sortOrder="0"/>-->
+<!--    </type>-->
+
+<!--    <type name="Ecommage\ThanhEx2\Controller\Customer\CustomerSave">-->
+<!--        <plugin name="ecommage_validation_blog_plugin" type="Ecommage\Validation\Plugin\CustomerSave" sortOrder="1"/>-->
+<!--    </type>-->
+
+    <type name="Ecommage\ThanhEx2\Model\Post">
+        <plugin name="ecommage_validation_blog_plugin" type="Ecommage\Validation\Plugin\CustomerSave" sortOrder="1"/>
+    </type>
+
+<!--    <type name="Ecommage\ThanhEx2\Model\Post">-->
+<!--        <plugin name="ecommage_validation_blog_plugin" type="Ecommage\Validation\Plugin\CustomerSaveEdit" sortOrder="1"/>-->
+<!--    </type>-->
+<!--    <type name="Ecommage\ThanhEx2\Controller\Customer\CustomerSaveEdit">-->
+<!--        <plugin name="ecommage_validation_edit_plugin" type="Ecommage\Validation\Plugin\CustomerSaveEdit" sortOrder="2"/>-->
+<!--    </type>-->
+<!--    <type name="Ecommage\ThanhEx2\Controller\Customer">-->
+<!--        <plugin name="create_customer_plugin" type="Ecommage\Validation\Plugin\AfterCreateCustomerPlugin" sortOrder="0"/>-->
+<!--    </type>-->
+</config>

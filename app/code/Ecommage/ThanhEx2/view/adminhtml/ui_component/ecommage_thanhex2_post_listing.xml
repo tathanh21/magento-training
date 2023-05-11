@@ -144,7 +144,7 @@
 <!--                </item>-->
 <!--            </argument>-->
 <!--        </column>-->
-            <column name="status" component="Magento_Ui/js/grid/columns/select">
+            <column name="status" component="Ecommage_ThanhEx2/js/grid/columns/select">
                 <settings>
                     <options class="Ecommage\ThanhEx2\Model\Post\Source\Status"/>
                     <filter>select</filter>

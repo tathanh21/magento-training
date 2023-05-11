@@ -327,6 +327,7 @@ return [
         'Ecommage_ThanhEx2' => 1,
         'Ecommage_ThanhEx4' => 1,
         'Ecommage_Thanhext3' => 1,
+        'Ecommage_Validation' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
         'Klarna_Kp' => 1,

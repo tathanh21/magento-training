@@ -1,0 +1,1 @@
+/home/cloudpanel/htdocs/thanh.mgt/vendor/magento/module-catalog/view/adminhtml/web/catalog/product.js

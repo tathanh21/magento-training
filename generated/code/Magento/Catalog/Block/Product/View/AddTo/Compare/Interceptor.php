@@ -17,6 +17,15 @@ class Interceptor extends \Magento\Catalog\Block\Product\View\AddTo\Compare impl
     /**
      * {@inheritdoc}
      */
+    public function getProduct()
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getProduct');
+        return $pluginInfo ? $this->___callPlugins('getProduct', func_get_args(), $pluginInfo) : parent::getProduct();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function canEmailToFriend()
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'canEmailToFriend');

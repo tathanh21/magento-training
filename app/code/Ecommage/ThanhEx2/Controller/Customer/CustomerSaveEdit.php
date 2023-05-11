@@ -8,6 +8,7 @@ use Magento\Framework\App\Action\Context;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Customer\Model\Session as CustomerSession;
 use Magento\Framework\Controller\Result\JsonFactory;
+use Magento\Framework\App\RequestInterface;
 
 
 class CustomerSaveEdit extends Action
@@ -15,13 +16,16 @@ class CustomerSaveEdit extends Action
     private $resultJsonFactory;
     protected $postFactory;
     protected $customerSession;
+    protected $request;
     public function __construct(
+        RequestInterface $request,
         JsonFactory $resultJsonFactory,
         CustomerSession $customerSession,
         Context   $context,
         PostFactory $postFactory
     )
     {
+        $this->request = $request;
         $this->resultJsonFactory = $resultJsonFactory;
         $this->customerSession = $customerSession;
         $this->postFactory = $postFactory;
@@ -32,12 +36,12 @@ class CustomerSaveEdit extends Action
     {
         $authorId = $this->customerSession->getCustomerId();
         // 1. POST request : Get  data
-        $data = (array)$this->getRequest()->getParams();
+        $data = $this->request->getParams();
 //        echo '<pre>';
 //        var_dump($data['id']);
 //        die();
 
-        $model = $this->postFactory->create()->load($data['id']);
+        $model = $this->postFactory->create()->load($data->getId());
         try {
             $model->setTitle($data['title'])
                 ->setAuthorId($authorId)
@@ -51,7 +55,7 @@ class CustomerSaveEdit extends Action
         }
 
         // Display the succes form validation message
-   //     $this->messageManager->addSuccessMessage('Edit done !');
+        //     $this->messageManager->addSuccessMessage('Edit done !');
 
         // Redirect to your form page (or anywhere you want...)
 //        $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);

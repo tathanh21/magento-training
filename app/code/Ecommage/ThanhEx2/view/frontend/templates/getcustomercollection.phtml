@@ -1,0 +1,9 @@
+<?php
+//var_dump($block->getCustomersCollection());
+//var_dump($block->getFilteredCustomersCollection());
+$customerID = 1;
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customer = $objectManager->create('Magento\Customer\Model\Customer')
+    ->load($customerID);
+echo $customerEmail = $customer->getEmail();
+?>

@@ -17,6 +17,15 @@ class Interceptor extends \Magento\CatalogImportExport\Model\Import\Proxy\Produc
     /**
      * {@inheritdoc}
      */
+    public function getPrice()
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getPrice');
+        return $pluginInfo ? $this->___callPlugins('getPrice', func_get_args(), $pluginInfo) : parent::getPrice();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function reindex()
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'reindex');

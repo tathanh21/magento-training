@@ -363,6 +363,12 @@
         'sortOrder' => 0,
         'instance' => 'Magento\\Swatches\\Model\\Plugin\\Product',
       ),
+      'change_product' => 
+      array (
+        'sortOrder' => 1,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Product',
+      ),
     ),
     'Magento\\ImportExport\\Model\\Import' => 
     array (
@@ -697,6 +703,11 @@
       array (
         'sortOrder' => 0,
         'instance' => 'Magento\\CatalogInventory\\Block\\Plugin\\ProductView',
+      ),
+      'change_product1' => 
+      array (
+        'sortOrder' => 5,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\ProductPlugin',
       ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action' => 
@@ -2781,6 +2792,35 @@
         'instance' => 'Dotdigitalgroup\\Chat\\Plugin\\EmailcapturePlugin',
       ),
     ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example' => 
+    array (
+      'Mageplaza_HelloWorld_Plugina' => 
+      array (
+        'sortOrder' => 0,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Examplea',
+      ),
+      'Mageplaza_HelloWorld_Pluginb' => 
+      array (
+        'sortOrder' => 10,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Exampleb',
+      ),
+      'Mageplaza_HelloWorld_Pluginc' => 
+      array (
+        'sortOrder' => 20,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Examplec',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Model\\Post' => 
+    array (
+      'ecommage_validation_blog_plugin' => 
+      array (
+        'sortOrder' => 1,
+        'instance' => 'Ecommage\\Validation\\Plugin\\CustomerSave',
+      ),
+    ),
     'Klarna\\Core\\Helper\\KlarnaConfig' => 
     array (
       'klarnaKpKlarnaConfig' => 
@@ -4085,6 +4125,12 @@
         'sortOrder' => 0,
         'instance' => 'Magento\\Swatches\\Model\\Plugin\\Product',
       ),
+      'change_product' => 
+      array (
+        'sortOrder' => 1,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Product',
+      ),
       'cms' => 
       array (
         'sortOrder' => 100,
@@ -4478,6 +4524,11 @@
       array (
         'sortOrder' => 0,
         'instance' => 'Magento\\CatalogInventory\\Block\\Plugin\\ProductView',
+      ),
+      'change_product1' => 
+      array (
+        'sortOrder' => 5,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\ProductPlugin',
       ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action' => 
@@ -7962,6 +8013,61 @@
         'instance' => 'Dotdigitalgroup\\Chat\\Plugin\\EmailcapturePlugin',
       ),
     ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example' => 
+    array (
+      'storeCheck' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Store\\App\\Action\\Plugin\\StoreCheck',
+        'disabled' => true,
+      ),
+      'eventDispatch' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Framework\\App\\Action\\Plugin\\EventDispatchPlugin',
+      ),
+      'actionFlagNoDispatch' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Framework\\App\\Action\\Plugin\\ActionFlagNoDispatchPlugin',
+      ),
+      'designLoader' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Theme\\Plugin\\LoadDesignPlugin',
+      ),
+      'customerNotification' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Customer\\Model\\Plugin\\CustomerNotification',
+      ),
+      'Mageplaza_HelloWorld_Plugina' => 
+      array (
+        'sortOrder' => 0,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Examplea',
+      ),
+      'Mageplaza_HelloWorld_Pluginb' => 
+      array (
+        'sortOrder' => 10,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Exampleb',
+      ),
+      'Mageplaza_HelloWorld_Pluginc' => 
+      array (
+        'sortOrder' => 20,
+        'disabled' => false,
+        'instance' => 'Ecommage\\ThanhEx2\\Plugin\\Examplec',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Model\\Post' => 
+    array (
+      'ecommage_validation_blog_plugin' => 
+      array (
+        'sortOrder' => 1,
+        'instance' => 'Ecommage\\Validation\\Plugin\\CustomerSave',
+      ),
+    ),
     'Klarna\\Core\\Helper\\KlarnaConfig' => 
     array (
       'klarnaKpKlarnaConfig' => 
@@ -9652,6 +9758,13 @@
         0 => 'exclude_swatch_attribute',
       ),
     ),
+    'Magento\\Catalog\\Model\\Product_getPrice___self' => 
+    array (
+      4 => 
+      array (
+        0 => 'change_product',
+      ),
+    ),
     'Magento\\ImportExport\\Model\\Import_importSource___self' => 
     array (
       4 => 
@@ -9948,6 +10061,18 @@
       4 => 
       array (
         0 => 'quantityValidators',
+      ),
+    ),
+    'Magento\\Catalog\\Block\\Product\\View_getProduct___self' => 
+    array (
+      2 => 'change_product1',
+      1 => 
+      array (
+        0 => 'change_product1',
+      ),
+      4 => 
+      array (
+        0 => 'change_product1',
       ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action_updateAttributes___self' => 
@@ -12921,6 +13046,59 @@
       4 => 
       array (
         0 => 'ddg_chat_emailcapture_plugin',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example_execute___self' => 
+    array (
+      1 => 
+      array (
+        0 => 'eventDispatch',
+      ),
+      4 => 
+      array (
+        0 => 'eventDispatch',
+      ),
+      2 => 'actionFlagNoDispatch',
+    ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example_execute_actionFlagNoDispatch' => 
+    array (
+      1 => 
+      array (
+        0 => 'designLoader',
+        1 => 'customerNotification',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example_setTitle___self' => 
+    array (
+      1 => 
+      array (
+        0 => 'Mageplaza_HelloWorld_Plugina',
+        1 => 'Mageplaza_HelloWorld_Pluginb',
+        2 => 'Mageplaza_HelloWorld_Pluginc',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example_getTitle___self' => 
+    array (
+      2 => 'Mageplaza_HelloWorld_Plugina',
+      4 => 
+      array (
+        0 => 'Mageplaza_HelloWorld_Plugina',
+      ),
+    ),
+    'Ecommage\\ThanhEx2\\Controller\\Plugin\\Example_getTitle_Mageplaza_HelloWorld_Plugina' => 
+    array (
+      4 => 
+      array (
+        0 => 'Mageplaza_HelloWorld_Pluginb',
+        1 => 'Mageplaza_HelloWorld_Pluginc',
+      ),
+      2 => 'Mageplaza_HelloWorld_Pluginc',
+    ),
+    'Ecommage\\ThanhEx2\\Model\\Post_validateBeforeSave___self' => 
+    array (
+      1 => 
+      array (
+        0 => 'ecommage_validation_blog_plugin',
       ),
     ),
     'Klarna\\Core\\Helper\\KlarnaConfig_getOmBuilderType___self' => 

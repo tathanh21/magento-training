@@ -5,6 +5,7 @@ $authors = $block->getAuthorCollection();
 //var_dump($countries);
 //die();
 ?>
+
 <div id="customer-form">
     <form class="form contact"
 
@@ -17,6 +18,7 @@ $authors = $block->getAuthorCollection();
           data-hasrequired="<?php echo __('* Required Fields') ?>"
 
           data-mage-init='{"validation":{}}'>
+
         <input type="hidden" name="cproduct_id" id="cproduct_id" value="0"/>
 
         <fieldset class="fieldset">
@@ -25,7 +27,7 @@ $authors = $block->getAuthorCollection();
                 <label class="label" for="name"><span><?php echo __('Title') ?></span></label>
                 <div class="control">
                     <input name="title" id="title" title="<?php echo __('Title') ?>" class="input-text" type="text"
-                           data-validate="{required:true}"/>
+                           data-validate="{required:true,'validate-five-words':true}"/>
                 </div>
             </div>
 <!--            <div class="field author required">-->
@@ -102,3 +104,10 @@ $authors = $block->getAuthorCollection();
     </form>
 
 </div>
+<script type="text/x-magento-init">
+    {
+        "#customer-form": {
+            "validation": {}
+        }
+    }
+</script>

@@ -5,6 +5,8 @@
  */
 namespace Magento\Framework\Model;
 
+use Magento\Framework\App\ObjectManager;
+use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Phrase;
 
 /**
@@ -717,6 +719,7 @@ abstract class AbstractModel extends \Magento\Framework\DataObject
             $exception = new \Magento\Framework\Validator\Exception(
                 new Phrase(implode(PHP_EOL, $errors))
             );
+
             foreach ($errors as $errorMessage) {
                 $exception->addMessage(new \Magento\Framework\Message\Error($errorMessage));
             }

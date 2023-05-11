@@ -110,7 +110,7 @@ class DataProvider extends \Magento\Ui\DataProvider\ModifierPoolDataProvider
 //        $data = $this->dataPersistor->get('ex2_id');
 
 
-        $this->_coreRegistry->registry('cms_page');
+//        $this->_coreRegistry->registry('cms_page');
 
         if (!empty($data)) {
             $page = $this->collection->getNewEmptyItem();

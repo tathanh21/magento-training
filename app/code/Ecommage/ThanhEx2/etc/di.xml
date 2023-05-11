@@ -23,4 +23,24 @@
             <argument name="logger" xsi:type="object">\Psr\Log\LoggerInterface</argument>
         </arguments>
     </type>
+
+    <type name="Ecommage\ThanhEx2\Controller\Plugin\Example">
+        <plugin name="Mageplaza_HelloWorld_Plugina" type="Ecommage\ThanhEx2\Plugin\Examplea" sortOrder="0" disabled="false"  />
+        <plugin name="Mageplaza_HelloWorld_Pluginb" type="Ecommage\ThanhEx2\Plugin\Exampleb" sortOrder="10" disabled="false"  />
+        <plugin name="Mageplaza_HelloWorld_Pluginc" type="Ecommage\ThanhEx2\Plugin\Examplec" sortOrder="20" disabled="false"  />
+    </type>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="change_product" type="Ecommage\ThanhEx2\Plugin\Product" sortOrder="1" disabled="false" />
+    </type>
+
+    <type name="Magento\Catalog\Block\Product\View">
+        <plugin name="change_product1" type="Ecommage\ThanhEx2\Plugin\ProductPlugin" sortOrder="5" />
+    </type>
+
+    <preference for="Magento\Catalog\Block\Product\View" type="Ecommage\ThanhEx2\Block\Catalog\Product\View" />
+    <preference for="Magento\Catalog\Model\Product" type="Ecommage\ThanhEx2\Model\Catalog\Product" />
+    <preference for="Magento\Catalog\Controller\Product\View" type="Ecommage\ThanhEx2\Controller\Catalog\Product\View" />
+    <preference for="Magento\Catalog\Helper\Data" type="Ecommage\ThanhEx2\Helper\Catalog\Data" />
+
 </config>

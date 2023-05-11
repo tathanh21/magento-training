@@ -17,6 +17,15 @@ class Interceptor extends \Magento\Wishlist\Block\Catalog\Product\View\AddTo\Wis
     /**
      * {@inheritdoc}
      */
+    public function getProduct()
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getProduct');
+        return $pluginInfo ? $this->___callPlugins('getProduct', func_get_args(), $pluginInfo) : parent::getProduct();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function canEmailToFriend()
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'canEmailToFriend');

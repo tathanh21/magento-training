@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1682483681;s:6:"expire";i:9999999999;s:4:"tags";s:37:"75e_LAYOUT_GENERAL_CACHE_TAG,75e_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1683799706;s:6:"expire";i:9999999999;s:4:"tags";s:37:"75e_LAYOUT_GENERAL_CACHE_TAG,75e_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6883,9 +6883,9 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1682483681;s:6:"expire";i:9999999999;s:4:"t
    <block class="Ecommage\ThanhEx1\Block\Display" name="thanhex1_display" template="Ecommage_ThanhEx1::sayhello.phtml"/>
 </referenceContainer>
 </handle><handle id="catalog_category_view" layout="2columns-left"><head>
-   <link src="Ecommage_ThanhEx2::js/swiper.js"/>
    <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" src_type="url"/>
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src_type="url"/>
+   <link src="Ecommage_ThanhEx2::js/swiper.js"/>
 </head>
 <body>
    <referenceContainer name="content">
@@ -6974,6 +6974,11 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1682483681;s:6:"expire";i:9999999999;s:4:"t
 </handle><handle id="thanhex2_customer_customerlist" layout="1column"><referenceContainer name="content">
    <block class="Ecommage\ThanhEx2\Block\Customer\CustomerList" name="customer_edit" template="Ecommage_ThanhEx2::customerlist.phtml"/>
 </referenceContainer>
+</handle><handle id="thanhex2_index_geturl"><body>
+   <referenceContainer name="content">
+      <block class="Ecommage\ThanhEx2\Block\GetUrl" name="thanhex2_geturl" template="Ecommage_ThanhEx2::geturl.phtml"/>
+   </referenceContainer>
+</body>
 </handle><handle id="thanhex2_index_helloworld"><body>
    <referenceContainer name="content">
       <block class="Ecommage\ThanhEx2\Block\HelloWorld" name="thanhex2_helloworld" template="Ecommage_ThanhEx2::helloworld.phtml"/>
@@ -6991,12 +6996,30 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1682483681;s:6:"expire";i:9999999999;s:4:"t
       <block class="Ecommage\ThanhEx2\Block\CustomerBlog" name="thanhex2_index1" template="Ecommage_ThanhEx2::customerblog.phtml"/>
    </container>
 </referenceContainer>
+</handle><handle id="thanhex2_js_index" layout="1column"><referenceContainer name="content">
+   <block class="Ecommage\ThanhEx2\Block\Js\Index" name="js" template="Ecommage_ThanhEx2::js/index.phtml"/>
+</referenceContainer>
 </handle><handle id="thanhex2_order_customemail" layout="1column"><referenceContainer name="content">
    <block class="Ecommage\ThanhEx2\Block\CustomEmail" name="thanhex2_customemail" template="Ecommage_ThanhEx2::formcustomemail.phtml"/>
 </referenceContainer>
 </handle><handle id="thanhex2_order_index" layout="1column"><referenceContainer name="content">
    <block class="Ecommage\ThanhEx2\Block\Mail" name="thanhex2_index" template="Ecommage_ThanhEx2::formmail.phtml"/>
 </referenceContainer>
+</handle><handle id="thanhex2_slide6_bestseller"><body>
+   <referenceContainer name="content">
+      <block class="Ecommage\ThanhEx2\Block\BestSellerProducts" name="bestseller" template="Ecommage_ThanhEx2::listbestseller.phtml"/>
+   </referenceContainer>
+</body>
+</handle><handle id="thanhex2_slide6_getcustomer"><body>
+   <referenceContainer name="content">
+      <block class="Ecommage\ThanhEx2\Block\CustomerCollection" name="getcollection" template="Ecommage_ThanhEx2::getcustomercollection.phtml"/>
+   </referenceContainer>
+</body>
+</handle><handle id="thanhex2_slide6_productcollectionfilter"><body>
+   <referenceContainer name="content">
+      <block class="Ecommage\ThanhEx2\Block\Products" name="getcollectionproduct" template="Ecommage_ThanhEx2::product-list.phtml"/>
+   </referenceContainer>
+</body>
 </handle><handle id="thanhex4_index_index" layout="1column"><referenceContainer name="content">
    <block class="Ecommage\ThanhEx4\Block\CustomerForm" name="thanhex4_index" template="Ecommage_ThanhEx4::customerform.phtml">
         </block>
@@ -7007,6 +7030,9 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1682483681;s:6:"expire";i:9999999999;s:4:"t
 </body>
 </handle><handle id="thanhext3_customer_customerform" layout="1column"><referenceContainer name="content">
    <block class="Ecommage\Thanhext3\Block\Customer\CustomerForm" name="customer_form" template="Ecommage_Thanhext3::customerform.phtml"/>
+</referenceContainer>
+</handle><handle id="validation_test_test" layout="1column"><referenceContainer name="content">
+   <block class="Ecommage\Validation\Block\Test\Test" name="test" template="Ecommage_Validation::test.phtml"/>
 </referenceContainer>
 </handle><handle id="checkout_index_index"><body>
    <referenceBlock name="checkout.root">

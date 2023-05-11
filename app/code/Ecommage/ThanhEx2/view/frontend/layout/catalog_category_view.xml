@@ -2,9 +2,9 @@
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
    <head>
-       <link src="Ecommage_ThanhEx2::js/swiper.js"/>
        <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" src_type="url"/>
        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src_type="url"></script>
+       <link src="Ecommage_ThanhEx2::js/swiper.js"/>
    </head>
     <body>
         <referenceContainer name="content">

@@ -8,10 +8,10 @@ class Interceptor extends \Ecommage\ThanhEx2\Controller\Customer\CustomerSaveEdi
 {
     use \Magento\Framework\Interception\Interceptor;
 
-    public function __construct(\Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory, \Magento\Customer\Model\Session $customerSession, \Magento\Framework\App\Action\Context $context, \Ecommage\ThanhEx2\Model\PostFactory $postFactory)
+    public function __construct(\Magento\Framework\App\RequestInterface $request, \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory, \Magento\Customer\Model\Session $customerSession, \Magento\Framework\App\Action\Context $context, \Ecommage\ThanhEx2\Model\PostFactory $postFactory)
     {
         $this->___init();
-        parent::__construct($resultJsonFactory, $customerSession, $context, $postFactory);
+        parent::__construct($request, $resultJsonFactory, $customerSession, $context, $postFactory);
     }
 
     /**
